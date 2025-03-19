@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Webpage</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    table, th, td {
+      border: 1px solid #000;
+    }
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to My Webpage</h1>
+
+  <!-- Ordered list with Roman numerals -->
+  <h2>Ordered List with Roman Numerals</h2>
+  <ol type="I">
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+    <li>Fourth item</li>
+    <li>Fifth item</li>
+  </ol>
+
+  <!-- External image from Pexels -->
+  <h2>Beautiful Landscape</h2>
+  <img src="https://images.pexels.com/photos/337541/pexels-photo-337541.jpeg" alt="Beautiful landscape" width="600">
+
+  <!-- Table of 5 contacts -->
+  <h2>Contact Information</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Mobile</th>
+      <th>Email</th>
+    </tr>
+    <tr>
+      <td>John Doe</td>
+      <td>123 Main St, New York, NY</td>
+      <td>(123) 456-7890</td>
+      <td>johndoe@example.com</td>
+    </tr>
+    <tr>
+      <td>Jane Smith</td>
+      <td>456 Oak St, Los Angeles, CA</td>
+      <td>(234) 567-8901</td>
+      <td>janesmith@example.com</td>
+    </tr>
+    <tr>
+      <td>Robert Brown</td>
+      <td>789 Pine St, Chicago, IL</td>
+      <td>(345) 678-9012</td>
+      <td>robertb@example.com</td>
+    </tr>
+    <tr>
+      <td>Emily Clark</td>
+      <td>101 Maple St, Houston, TX</td>
+      <td>(456) 789-0123</td>
+      <td>emilyc@example.com</td>
+    </tr>
+    <tr>
+      <td>Michael Johnson</td>
+      <td>202 Birch St, Phoenix, AZ</td>
+      <td>(567) 890-1234</td>
+      <td>michaelj@example.com</td>
+    </tr>
+  </table>
+
+  <!-- Registration Form -->
+  <h2>Registration Form</h2>
+  <form action="/submit" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required minlength="5" placeholder="Enter at least 5 characters"><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required placeholder="Enter your email"><br><br>
+    
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required minlength="8" placeholder="Enter at least 8 characters"><br><br>
+    
+    <label for="confirmPassword">Confirm Password:</label>
+    <input type="password" id="confirmPassword" name="confirmPassword" required placeholder="Confirm your password"><br><br>
+    
+    <input type="submit" value="Register">
+  </form>
+
+</body>
+</html>
